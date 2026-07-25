@@ -1,0 +1,8 @@
+indicator,operationalization
+TP,Total unique publications in the analysis period.
+Annual production,Publication records grouped by year.
+Database coverage,Source-database presence and available overlap combinations.
+Author productivity,Number of records associated with each author.
+Country output,"Corresponding-author country count derived from RP, with C1 fallback."
+Source productivity,Number of records by publication source.
+Thematic frequency,Author and indexed keyword occurrence counts.

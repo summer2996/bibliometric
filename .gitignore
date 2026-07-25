@@ -1,0 +1,27 @@
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# uv virtual environment
+.venv/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+
+# Uncomment these if raw data should not be public
+# data/*.RData
+# data/*.csv
+# data/*.bib
+# data/*.txt

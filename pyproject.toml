@@ -1,0 +1,13 @@
+[project]
+name = "bibliometric-replication"
+version = "0.1.0"
+description = "Python replication of figures and tables from an ACM bibliometric study"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.11.1",
+    "networkx>=3.6.1",
+    "pandas>=3.0.3",
+    "rdata>=1.1.0",
+    "requests>=2.34.2",
+]

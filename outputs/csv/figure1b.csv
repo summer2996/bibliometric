@@ -1,0 +1,15 @@
+database_combination,records,number_of_databases
+ACM only,953,1
+Scopus only,324,1
+WoS only,297,1
+IEEE only,144,1
+ACM+WoS,181,2
+Scopus+WoS,109,2
+ACM+Scopus,107,2
+IEEE+Scopus,74,2
+IEEE+WoS,9,2
+IEEE+ACM,2,2
+ACM+Scopus+WoS,111,3
+IEEE+Scopus+WoS,57,3
+IEEE+ACM+WoS,1,3
+All four,2,4

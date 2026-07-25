@@ -1,0 +1,5 @@
+category,keywords,reason
+Domain,Programming education; introductory programming; novice programmer; computer science education,Defines the computing-education boundary.
+AI systems,Multi-agent; large language model; LLM; generative AI; retrieval-augmented generation; AI tutor; intelligent tutoring system,"Captures AI, LLM, and tutor tools used by learners."
+Scaffolding,Scaffolding; adaptive learning; adaptive scaffolding; dynamic scaffolding; scaffolding fading; cognitive load,Captures support and feedback mechanisms.
+Representation,Representation form; syntax feedback; syntax hints; syntax error; logic diagram; pseudocode; code template,"Captures code, diagram, hint, and representation issues."
