@@ -1,0 +1,12 @@
+year,records,is_partial_year,year_label,price_fit,exponential_growth_rate,fit_note
+2016,53,False,2016,40.28219047950074,0.30416193080370535,Exponential fit excludes the incomplete 2026 record.
+2017,62,False,2017,52.53449931274833,0.30416193080370535,Exponential fit excludes the incomplete 2026 record.
+2018,72,False,2018,68.51349405751981,0.30416193080370535,Exponential fit excludes the incomplete 2026 record.
+2019,102,False,2019,89.35269069616324,0.30416193080370535,Exponential fit excludes the incomplete 2026 record.
+2020,82,False,2020,116.53037762081453,0.30416193080370535,Exponential fit excludes the incomplete 2026 record.
+2021,109,False,2021,151.9744822752464,0.30416193080370535,Exponential fit excludes the incomplete 2026 record.
+2022,109,False,2022,198.19933423697887,0.30416193080370535,Exponential fit excludes the incomplete 2026 record.
+2023,219,False,2023,258.4840264225073,0.30416193080370535,Exponential fit excludes the incomplete 2026 record.
+2024,444,False,2024,337.10502698109315,0.30416193080370535,Exponential fit excludes the incomplete 2026 record.
+2025,762,False,2025,439.6395428712977,0.30416193080370535,Exponential fit excludes the incomplete 2026 record.
+2026,357,True,2026*,573.3611550886901,0.30416193080370535,Exponential fit excludes the incomplete 2026 record.

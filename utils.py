@@ -108,9 +108,18 @@ def apply_plot_style() -> None:
             "axes.axisbelow": True,
             "grid.alpha": 0.22,
             "grid.linewidth": 0.6,
-            "font.size": 9,
-            "axes.titlesize": 11,
+            "font.family": "serif",
+            "font.serif": ["Times New Roman", "Times", "DejaVu Serif"],
+            "font.size": 8,
+            "axes.titlesize": 9,
             "axes.titleweight": "bold",
+            "axes.labelsize": 8,
+            "xtick.labelsize": 7,
+            "ytick.labelsize": 7,
+            "legend.fontsize": 7,
+            "lines.linewidth": 1.35,
+            "lines.markersize": 4,
+            "patch.linewidth": 0.4,
         }
     )
 

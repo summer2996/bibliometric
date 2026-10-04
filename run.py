@@ -10,6 +10,8 @@ SCRIPTS = [
     "figures/figure2b.py",
     "figures/figure3a.py",
     "figures/figure3b.py",
+    "figures/figure4_bibliometric_laws.py",
+    "figures/figure5_network_centrality.py",
     "tables.py",
 ]
 

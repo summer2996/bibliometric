@@ -27,6 +27,14 @@ Outputs are saved in:
 - PDF figures: `outputs/pdf/`
 - Figure and table data: `outputs/csv/`
 
+The camera-ready revision adds two reviewer-response outputs:
+
+- `figure4_bibliometric_laws`: Price's Law annual growth, Bradford source
+  concentration, Lotka author productivity, and total-citation distribution.
+- `figure5_network_centrality`: visual networks for co-cited references,
+  keyword co-occurrence, and source bibliographic coupling, with centrality
+  measures in `table7_network_centrality.csv`.
+
 The analysis period is controlled by `START_YEAR` and `END_YEAR` in `utils.py`.
 It is currently 2016–2026. Only master records whose `PY` value falls within
 this range are included in Figures 2–3 and Tables 3–6.
@@ -176,7 +184,85 @@ and the top ten countries are retained.
 | `country` | Standardized corresponding-author country |
 | `records` | Deduplicated documents assigned to that country; at most one country per document |
 
-## 8. Table 1: Search strategy
+## 8. Figure 4: Bibliometric laws and citation distribution
+
+Script: `figures/figure4_bibliometric_laws.py`  
+Combined output: `outputs/csv/figure4_bibliometric_laws.csv`  
+Panel outputs:
+
+- `outputs/csv/figure4a_price_law.csv`
+- `outputs/csv/figure4b_bradford_law.csv`
+- `outputs/csv/figure4c_lotka_law.csv`
+- `outputs/csv/figure4d_citation_distribution.csv`
+
+This figure responds to the reviewer request for inferential or comparative
+bibliometric analyses.
+
+| Panel | Method | Meaning |
+| --- | --- | --- |
+| Price's Law trend | Exponential fit to annual publication counts | Estimates the annual growth rate of the research corpus |
+| Bradford source concentration | Sources ranked by output and divided into three equal-output zones | Shows whether publications are concentrated in a small source core |
+| Lotka author productivity | Log-log fit of publications per author against number of authors | Summarizes author productivity concentration |
+| Citation distribution | Distribution of `TC` total-citation values | Shows skewness and the prevalence of low- and high-citation records |
+
+## 9. Figure 5: Network centrality visualizations
+
+Script: `figures/figure5_network_centrality.py`  
+Figure output: `outputs/csv/figure5_network_centrality.csv`  
+Centrality table: `outputs/csv/table7_network_centrality.csv`
+
+The figure visualizes three reviewer-requested relational structures rather
+than reporting rankings only:
+
+- Co-cited-reference network.
+- Keyword co-occurrence network.
+- Source bibliographic-coupling network.
+
+Node size is proportional to weighted degree. Edge width is proportional to
+connection weight. Labels are shown for the strongest nodes to keep the figure
+legible.
+
+### What the clusters mean in Figure 5
+
+The clusters are visual communities detected from the same network edges used
+for the bibliometric calculations. They do not add new records, remove records,
+or change the original data. They only color nodes that are more strongly
+connected to one another than to the rest of the displayed network. This makes
+the network maps easier to interpret in the paper instead of showing all nodes
+with the same color.
+
+The cluster colors are assigned by the Louvain community-detection algorithm
+implemented in NetworkX. The algorithm uses the existing edge weights:
+
+- In the co-citation network, two references are connected when they are cited
+  together by the same document. A cluster therefore indicates a group of cited
+  works that tend to be used together as an intellectual base.
+- In the keyword co-occurrence network, two keywords are connected when they
+  appear in the same document. A cluster therefore indicates a topical theme or
+  research vocabulary that tends to appear together.
+- In the source bibliographic-coupling network, two sources are connected when
+  publications in those sources share references. A cluster therefore indicates
+  venues with similar cited-reference profiles.
+
+Cluster numbers and colors are visual identifiers only. They should not be read
+as an ordinal ranking: Cluster 1 is not better, larger, or more important than
+Cluster 2 unless the accompanying centrality values show that its nodes have
+higher weighted degree. The substantive interpretation should come from the
+node labels, node sizes, edge thicknesses, and the top nodes listed in the CSV
+outputs, not from the color number itself.
+
+| Column | Meaning |
+| --- | --- |
+| `network` | One of the three network types |
+| `node` | Reference, keyword, or source node |
+| `weighted_degree` | Sum of incident edge weights |
+| `betweenness` | Betweenness centrality |
+| `closeness` | Closeness centrality |
+| `occurrences` | Node frequency or number of source references, depending on network |
+| `cluster` | Louvain community ID used for node color in Figure 5 |
+| `display_label` | Short label shown in the network figure when space allows |
+
+## 10. Table 1: Search strategy
 
 Output: `outputs/csv/table1_search_strategy.csv`
 
@@ -189,7 +275,7 @@ so it has no DOI column.
 | `keywords` | Semicolon-separated search terms in the category |
 | `reason` | Purpose of including the category in the query |
 
-## 9. Table 2: Bibliometric indicators
+## 11. Table 2: Bibliometric indicators
 
 Output: `outputs/csv/table2_indicators.csv`
 
@@ -200,7 +286,7 @@ This table defines the analysis indicators and is not document-level data.
 | `indicator` | Indicator name |
 | `operationalization` | Exact counting rule used by this project |
 
-## 10. Table 3: Co-cited references
+## 12. Table 3: Co-cited references
 
 Output: `outputs/csv/table3_cocited_references.csv`
 
@@ -239,7 +325,7 @@ Thus, `degree` is a relative score between 0 and 1, not a count. A score of
 A occurs in two documents, but its `raw_degree` is 3 because it forms three
 weighted co-citation connections.
 
-## 11. Table 4: Bibliographic coupling
+## 13. Table 4: Bibliographic coupling
 
 Output: `outputs/csv/table4_bibliographic_coupling.csv`  
 Author-homonym audit: `outputs/csv/table4_homonymous_authors.csv`
@@ -304,7 +390,7 @@ The homonym-audit CSV contains:
 | `highest_in_homonym_group` | Whether this identity ranks first within its abbreviation group |
 | `entered_table4_top10` | Whether the group's winning identity entered the global author top ten |
 
-## 12. Table 5: Keyword co-occurrence
+## 14. Table 5: Keyword co-occurrence
 
 Output: `outputs/csv/table5_keyword_cooccurrence.csv`
 
@@ -331,7 +417,7 @@ value of 3, their `degree` values are 1.00, 1.00, and 0.67.
 
 Rows aggregate multiple documents and therefore do not have a single DOI.
 
-## 13. Table 6: Thematic clusters
+## 15. Table 6: Thematic clusters
 
 Output: `outputs/csv/table6_thematic_clusters.csv`
 
@@ -359,7 +445,15 @@ The thematic clusters are built from keyword co-occurrence networks:
 
 Clusters aggregate multiple documents and therefore do not have a single DOI.
 
-## 14. Analysis summary
+## 16. Table 7: Network centrality
+
+Output: `outputs/csv/table7_network_centrality.csv`
+
+This table accompanies Figure 5 and provides the centrality values requested by
+the reviewer. It reports weighted degree, betweenness, closeness, and frequency
+for the displayed co-citation, keyword, and source-coupling networks.
+
+## 17. Analysis summary
 
 Output: `outputs/csv/analysis_summary.csv`
 
@@ -376,7 +470,7 @@ Output: `outputs/csv/analysis_summary.csv`
 This file is a run-level validation summary and does not correspond to an
 individual document.
 
-## 15. DOI rules
+## 18. DOI rules
 
 - A DOI is supplied whenever a row represents one identifiable document.
   Currently, this applies to Table 3 reference rows and Table 4 document rows.
@@ -384,7 +478,7 @@ individual document.
   themes, or other groups of documents.
 - Crossref DOI metadata are cached in `data/doi_metadata_cache.csv` for reuse.
 
-## 16. Project structure
+## 19. Project structure
 
 ```text
 Bibliometric/
@@ -408,7 +502,9 @@ Bibliometric/
 │   ├── figure2a.py        # Calculates and plots annual publication output for Figure 2(a)
 │   ├── figure2b.py        # Ranks authors, audits ambiguous names, and plots annual author output for Figure 2(b)
 │   ├── figure3a.py        # Ranks publication sources and draws Figure 3(a)
-│   └── figure3b.py        # Identifies corresponding-author countries and draws Figure 3(b)
+│   ├── figure3b.py        # Identifies corresponding-author countries and draws Figure 3(b)
+│   ├── figure4_bibliometric_laws.py    # Draws Price, Bradford, Lotka, and citation-distribution panels
+│   └── figure5_network_centrality.py   # Draws co-citation, keyword, and source-coupling network panels
 └── outputs/
     ├── README.md          # Short guide linking to the complete output documentation
     ├── png/               # Generated high-resolution PNG figures

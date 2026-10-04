@@ -1,0 +1,54 @@
+network,node,display_label,cluster,weighted_degree,betweenness,closeness,occurrences
+Co-cited references,DOI 10.1145/3511861.3511863,"Finnie-Ansley et al. (2022), Robots Are Coming",1,514,0.06666666666666667,25.353524245137777,110
+Co-cited references,DOI 10.1145/3501385.3543957,"Sarsa et al. (2022), LLM Exercises",1,491,0.03333333333333333,24.35085937222856,111
+Co-cited references,DOI 10.1145/3623762.3633499,"Prather et al. (2023), Robots Are Here",2,481,0.275,26.147361230042723,110
+Co-cited references,DOI 10.1145/3545945.3569759,"Becker et al. (2023), Programming Is Hard",1,458,0.008333333333333333,23.184385592781464,103
+Co-cited references,DOI 10.1145/3587102.3588785,"Leinonen et al. (2023), Code Explanations",1,410,0.0,21.771760257757403,71
+Co-cited references,DOI 10.1145/3545945.3569770,"Leinonen et al. (2023), Error Messages",1,393,0.008333333333333333,20.282252278819026,75
+Co-cited references,DOI 10.1145/3545945.3569823,"Denny et al. (2023), Conversing with Copilot",1,367,0.0,19.667935895479033,77
+Co-cited references,DOI 10.1145/3576123.3576134,"Finnie-Ansley et al. (2023), Codex in CS2",1,364,0.0,19.45269230149821,66
+Co-cited references,DOI 10.1145/3544548.3580919,"Kazemitabaar et al. (2023), AI Code Generators",2,354,0.0,19.962587420279515,76
+Co-cited references,DOI 10.1145/3545945.3569785,SIGCSE 2023 AI/CS Education,1,354,0.0,18.585207203357925,56
+Co-cited references,DOI 10.1145/3568813.3600138,"Lau and Guo (2023), Instructor Adaptation",2,317,0.0,17.923178883423464,74
+Co-cited references,DOI 10.1145/3624720,"Denny et al. (2024), Era of Generative AI",2,314,0.0,17.841356235044657,67
+Co-cited references,DOI 10.1145/3631802.3631830,Koli Calling 2023 GenAI Study,2,299,0.0,17.319493448472205,64
+Co-cited references,DOI 10.1145/3632620.3671116,"Prather et al. (2024), Widening Gap",2,228,0.0,15.284458884853352,57
+Co-cited references,DOI 10.1145/3613904.3642773,"Kazemitabaar et al. (2024), CodeAid",2,204,0.0,14.437691903200083,61
+Co-cited references,DOI 10.1145/3231711,"Keuning et al. (2018), Feedback Review",3,158,0.0,10.817690578255071,54
+Co-cited references,DOI 10.1145/3293881.3295779,"Luxton-Reilly et al. (2018), Intro Programming Review",3,94,0.0,8.812494298680841,60
+Keyword co-occurrence,STUDENTS,Students,1,2194,0.41911764705882354,91.06381746536015,471
+Keyword co-occurrence,EDUCATION COMPUTING,Education Computing,1,2116,0.15441176470588236,85.4430748732694,398
+Keyword co-occurrence,LANGUAGE MODEL,Language Model,3,1730,0.0,73.03596857499292,319
+Keyword co-occurrence,PROGRAMMING EDUCATION,Programming Education,1,1548,0.11029411764705882,74.97424566186507,490
+Keyword co-occurrence,LARGE LANGUAGE MODEL,Large Language Model,3,1471,0.0,66.73917049302874,287
+Keyword co-occurrence,TEACHING,Teaching,1,1422,0.0,68.32036987688241,269
+Keyword co-occurrence,LARGE LANGUAGE MODELS,Large Language Models,3,1253,0.014705882352941176,62.193126283290944,303
+Keyword co-occurrence,CURRICULA,Curricula,1,1128,0.0,61.31045113771921,198
+Keyword co-occurrence,ARTIFICIAL INTELLIGENCE,Artificial Intelligence,2,1034,0.0,56.96643027206314,219
+Keyword co-occurrence,LEARNING SYSTEMS,Learning Systems,1,1006,0.0,57.59894857509528,186
+Keyword co-occurrence,ENGINEERING EDUCATION,Engineering Education,1,965,0.0,54.99535515714293,165
+Keyword co-occurrence,COMPUTER AIDED INSTRUCTION,Computer Aided Instruction,1,868,0.0,56.65360100035627,161
+Keyword co-occurrence,GENERATIVE AI,Generative Ai,2,789,0.0,48.78989003662674,318
+Keyword co-occurrence,INTRODUCTORY PROGRAMMING,Introductory Programming,2,667,0.0,47.34544940906351,215
+Keyword co-occurrence,CHATGPT,Chatgpt,2,545,0.0,37.884205540128704,158
+Keyword co-occurrence,CS1,Cs1,2,489,0.0,39.39175532332829,192
+Keyword co-occurrence,COMPUTER SCIENCE EDUCATION,Computer Science Education,2,344,0.0,26.535528202051907,265
+Keyword co-occurrence,EDUCATION,Education,2,247,0.0,28.86353317716802,207
+Source bibliographic coupling,ACM TOCE,ACM TOCE,1,1979,0.8897058823529411,75.512617188191,10623
+Source bibliographic coupling,ACM ICPS,ACM ICPS,2,1126,0.0,59.33125967680552,1101
+Source bibliographic coupling,ITiCSE,ITiCSE,2,1089,0.0,57.99997900900556,866
+Source bibliographic coupling,SIGCSE TS 2025,SIGCSE TS 2025,1,911,0.10294117647058823,58.200582700093925,1602
+Source bibliographic coupling,Koli Calling 2025,Koli Calling 2025,2,789,0.0,50.88463414164296,638
+Source bibliographic coupling,SIGCSE TS 2026,SIGCSE TS 2026,1,786,0.0,55.04165501180212,1577
+Source bibliographic coupling,IEEE Access,IEEE Access,3,768,0.11764705882352941,49.710333642762336,1246
+Source bibliographic coupling,FIE,FIE,2,759,0.0,52.056853862651835,934
+Source bibliographic coupling,CHI 2026,CHI 2026,1,694,0.0,47.90224757479713,1075
+Source bibliographic coupling,LNCS,LNCS,2,603,0.0,44.257098798358726,1015
+Source bibliographic coupling,CHI 2025,CHI 2025,1,432,0.0,36.01672476215578,851
+Source bibliographic coupling,ACM TOSEM,ACM TOSEM,1,417,0.0,44.141175453797096,1560
+Source bibliographic coupling,PACM HCI,PACM HCI,1,396,0.0,48.55368003156337,2096
+Source bibliographic coupling,Education and IT,Education and IT,3,279,0.0,30.05961783671457,1137
+Source bibliographic coupling,ACM Computing Surveys,ACM Computing Surveys,1,238,0.0,38.00155093537441,1067
+Source bibliographic coupling,ITiCSE-WGR 2025,ITiCSE-WGR 2025,2,161,0.0,30.059049806852276,638
+Source bibliographic coupling,Acm Trans. Comput.-Hum. Interact.,Acm Trans. Comput.-Hum. Interact.,1,144,0.0,25.38933859679284,611
+Source bibliographic coupling,ITiCSE Companion 2018,ITiCSE Companion 2018,3,65,0.0,18.61158087406148,728

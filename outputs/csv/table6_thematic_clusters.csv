@@ -1,9 +1,9 @@
 vocabulary,cluster_label,terms,representative_terms
-Indexed keywords,Generative Ai,84,Generative Ai; Education; Computer Science Education; Programming Profession; Python
-Indexed keywords,Students,83,Students; Education Computing; Programming Education; Teaching; Curricula
-Indexed keywords,Language Model,69,Language Model; Large Language Model; Introductory Programming; Codes (Symbols); Novice Programmer
-Indexed keywords,Federated Learning,14,Federated Learning; Contrastive Learning; Adversarial Machine Learning; Java Programming Language; Learning Outcome
-Author keywords,Education,80,Education; Programming Profession; Programming; Syntactics; Codes
-Author keywords,Programming Education,72,Programming Education; Large Language Models; Generative Ai; Chatgpt; Llms
-Author keywords,Cs1,58,Cs1; Introductory Programming; Artificial Intelligence; Ai; Llm
-Author keywords,Computer Science Education,36,Computer Science Education; Scaffolding; Intelligent Tutoring System; Engineering Education; Active Learning
+Indexed keywords,Language Model,84,Language Model; Large Language Model; Generative Ai; Introductory Programming; Codes (Symbols)
+Indexed keywords,Students,84,Students; Education Computing; Programming Education; Teaching; Curricula
+Indexed keywords,Education,70,Education; Computer Science Education; Programming Profession; Python; Problem-Solving
+Indexed keywords,Federated Learning,12,Federated Learning; Contrastive Learning; Adversarial Machine Learning; Java Programming Language; Learning Outcome
+Author keywords,Programming Education,93,Programming Education; Large Language Models; Generative Ai; Computer Science Education; Llms
+Author keywords,Education,83,Education; Programming Profession; Programming; Syntactics; Codes
+Author keywords,Chatgpt,51,Chatgpt; Cs1; Introductory Programming; Artificial Intelligence; Ai
+Author keywords,Novice Programmers,19,Novice Programmers; Feedback; Debugging; Compiler Error Messages; Programming Error Messages
